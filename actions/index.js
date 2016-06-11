@@ -95,7 +95,7 @@ export const QUOTE_FAILURE = 'QUOTE_FAILURE'
 export function fetchQuote() {
     return {
         [CALL_API]: {
-            endpoint: 'quotes/1?random=yes',
+            endpoint: 'quotes/1?random=public',
             authenticated: false,
             types: [QUOTE_REQUEST, QUOTE_SUCCESS, QUOTE_FAILURE]
         }
@@ -105,7 +105,7 @@ export function fetchQuote() {
 export function fetchSecretQuote() {
     return {
         [CALL_API]: {
-            endpoint: 'quotes/51',
+            endpoint: 'quotes/1?random=secret',
             authenticated: true,
             types: [QUOTE_REQUEST, QUOTE_SUCCESS, QUOTE_FAILURE]
         }
