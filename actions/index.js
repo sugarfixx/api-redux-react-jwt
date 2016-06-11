@@ -34,7 +34,6 @@ function loginError(message) {
 }
 
 
-
 function requestLogout() {
     return {
         type: LOGOUT_REQUEST,
@@ -90,7 +89,6 @@ export function logoutUser() {
 export const QUOTE_REQUEST = 'QUOTE_REQUEST'
 export const QUOTE_SUCCESS = 'QUOTE_SUCCESS'
 export const QUOTE_FAILURE = 'QUOTE_FAILURE'
-
 
 export function fetchQuote() {
     return {
