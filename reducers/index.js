@@ -37,6 +37,8 @@ function auth(state = {
     }
 }
 
+
+
 function quotes(state = {
     isFetching: false,
     quote: '',
